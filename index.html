@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Cursos da Alura</title>
 </head>
+
 <body>
     <ul>
         <li>git init</li>
@@ -18,6 +20,36 @@
         <li>git clone (caminho do servidor) nome da pasta</li>
         <li>git push (enviar alterações)</li>
         <li>git pull (receber alterações)</li>
+
+        <ul>PASSO A PASSO:</ul>
+        <li>Crie uma pasta nova em seu computador</li>
+        <li>No terminal (ou Git Bash, no Windows) navegue até a pasta recém criada (utilize o comando cd para navegar
+            entre pastas)</li>
+        <li>Execute o comando git init --bare. <br>
+            OBS: Não se esqueça do parâmetro --bare. Caso tenha executado o comando init sem esse parâmetro, execute na
+            sequência o seguinte comando: git config core.bare true.</li>
+        <li>Navegue até a pasta onde se encontra o seu projeto</li>
+        <li>Execute o comando git remote add local {caminho}. Substitua {caminho} pelo caminho completo da pasta recém
+            criada</li>
+        <li>Crie uma nova pasta em seu computador, para representar o trabalho de outra pessoa</li>
+        <li>No terminal (ou Git Bash, no Windows) navegue até a pasta recém criada</li>
+        <li>Execute o comando git clone {caminho} projeto. Substitua {caminho} pelo caminho completo da pasta que
+            criamos
+            no primeiro passo</li>
+        <li>Observe que o repositório clonado está vazio</li>
+        <li>Acesse a pasta Projeto e execute o comando 'git remote rename origin local' para renomear o repositório
+            local da outra pessoa de "origin" para "local"</li>
+        <li>Navegue até a pasta onde se encontra o seu projeto original</li>
+        <li>Execute o comando git push local master para enviar as suas modificações para o seu servidor</li>
+        <li>Navegue até a pasta criada no passo 6</li>
+        <li>Execute o comando git pull local master para baixar as modificações</li>
+        <li>Abra o seu navegador e acesse http://github.com/</li>
+        <li>Crie uma conta</li>
+        <li>Crie um novo repositório, clicando no símbolo de adição no canto superior direito</li>
+        <li>No terminal (ou Git Bash, no Windows) adicione, ao seu projeto inicial, o repositório remoto recém criado
+            (os comandos são mostrados pelo próprio GitHub)</li>
+        <li>Execute git push origin main para enviar as suas alterações para o repositório no GitHub.</li>
     </ul>
 </body>
+
 </html>
