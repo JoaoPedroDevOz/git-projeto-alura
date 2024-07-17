@@ -21,7 +21,7 @@
         <li>git push (enviar alterações)</li>
         <li>git pull (receber alterações)</li>
         <li>git restore --staged <file> (reverter alterações de uma adição)</li>
-        <li>git revert HASH_do_Commit (reverter alterações de um commit)</li>
+        <li>git revert <HASH do Commit> (reverter alterações de um commit)</li>
         <li>git stash (salva as alterações de forma isolada, podendo ser pega futuramente)</li>
         <li>git stash list (lista de stashs)</li>
         <li>git stash apply "número do stash" + git stash drop (apply serve para pegar o stash para modificação, 
@@ -68,6 +68,10 @@
 
         <li>Para saber o local remoto: git remote </li>
         <li>Para saber a branch: git branch</li>
+        <li>Para saber as atualizações do sistema: git diff 
+            <{hash commit anterior}..{hash commit posterior}></li>
+        <li>Para criar uma versão do sistema, 
+            sua última atualização: git tag -a <nome da tag> -m "texto complementar (opcional)"</li>
     </ul>
 </body>
 
